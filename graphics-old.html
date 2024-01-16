@@ -101,24 +101,24 @@
         </v-app>
     </div>
     <script type="module">
-        // import { connect, StringCodec } from "./js/nats.js"
+        import { connect, StringCodec } from "./js/nats.js"
 
-        // const natsInit = async function (connectionURL, topic, callback) {
-        //     console.log(`Connecting to Nats: ${connectionURL}`)
-        //     const conn = await connect({
-        //         servers: connectionURL
-        //     })
+        const natsInit = async function (connectionURL, topic, callback) {
+            console.log(`Connecting to Nats: ${connectionURL}`)
+            const conn = await connect({
+                servers: connectionURL
+            })
 
-        //     console.log(`Connected to Nats: ${connectionURL}`)
-        //     const sc = StringCodec()
+            console.log(`Connected to Nats: ${connectionURL}`)
+            const sc = StringCodec()
 
-        //     const publishFunction = (message) => {
-        //         console.log(`Publishing message: ${message}`);
-        //         conn.publish(topic, sc.encode(message));
-        //     }
+            const publishFunction = (message) => {
+                console.log(`Publishing message: ${message}`);
+                conn.publish(topic, sc.encode(message));
+            }
 
-        //     return publishFunction;
-        // }
+            return publishFunction;
+        }
         new Vue({
             el: '#app',
             vuetify: new Vuetify(),
