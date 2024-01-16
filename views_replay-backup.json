@@ -1,0 +1,1662 @@
+{
+    "keyboardShortcuts": [
+        {
+            "name": "reverse",
+            "key": "keypad_enter"
+        }
+    ],
+    "views": [
+        {
+            "name": "Final Cam Postions",
+            "type": "Custom grid",
+            "settings": {
+                "gridCols": 1920,
+                "gridRows": 1080,
+                "tileARNumerator": 1,
+                "tileARDenominator": 1,
+                "tiles": [
+                    {
+                        "label": "GraphicsSequences",
+                        "colStart": 827,
+                        "rowStart": 647,
+                        "w": 267,
+                        "h": 150,
+                        "type": "subView",
+                        "name": "graphicsSequences"
+                    },
+                    {
+                        "label": "Left Attack Line (15)",
+                        "colStart": 267,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "15",
+                        "key": "ctrl+7",
+                        "reverse": "shift+7"
+                    },
+                    {
+                        "label": "Far Net (20)",
+                        "colStart": 433,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "20",
+                        "key": "3",
+                        "reverse": "shift+3"
+                    },
+                    {
+                        "label": "Right Attack Line (14)",
+                        "colStart": 1653,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "14",
+                        "key": "8",
+                        "reverse": "shift+8"
+                    },
+                    {
+                        "label": "Left Far Block Touch (18)",
+                        "colStart": 0,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "18",
+                        "key": "1",
+                        "reverse": "shift+1"
+                    },
+                    {
+                        "label": "Right Far Block Touch (11)",
+                        "colStart": 1653,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "11",
+                        "key": "shift+1",
+                        "reverse": "1"
+                    },
+                    {
+                        "label": "Left Near Block Touch (17)",
+                        "colStart": 267,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "17",
+                        "key": "2",
+                        "reverse": "shift+2"
+                    },
+                    {
+                        "label": "Right Near Block Touch (12)",
+                        "colStart": 1386,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "12",
+                        "key": "shift+2",
+                        "reverse": "2"
+                    },
+                    {
+                        "label": "Left Service Line (16)",
+                        "colStart": 0,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "16",
+                        "key": "6",
+                        "reverse": "shift+6"
+                    },
+                    {
+                        "label": "Near Net (21)",
+                        "colStart": 1263,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "21",
+                        "key": "shift+3",
+                        "reverse": "3"
+                    },
+                    {
+                        "label": "Right Service Line (13)",
+                        "colStart": 1653,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "13",
+                        "key": "9",
+                        "reverse": "shift+9"
+                    },
+                    {
+                        "label": "Left Attack Line (15)",
+                        "colStart": 0,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "15",
+                        "key": "7",
+                        "reverse": "shift+7"
+                    },
+                    {
+                        "label": "Right Attack Line (14)",
+                        "colStart": 1386,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "14",
+                        "key": "ctrl+8",
+                        "reverse": "shift+8"
+                    },
+                    {
+                        "label": "Left Far Block Touch (18)",
+                        "colStart": 267,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "18",
+                        "key": "ctrl+1",
+                        "reverse": "shift+ctrl+1"
+                    },
+                    {
+                        "label": "Right Far Block Touch (11)",
+                        "colStart": 1386,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "11",
+                        "key": "shift+ctrl+1",
+                        "reverse": "ctrl+1"
+                    },
+                    {
+                        "label": "Left Near Block Touch (17)",
+                        "colStart": 0,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "17",
+                        "key": "ctrl+2",
+                        "reverse": "shift+ctrl+2"
+                    },
+                    {
+                        "label": "Right Near Block Touch (12)",
+                        "colStart": 1653,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "12",
+                        "key": "shift+ctrl+2",
+                        "reverse": "ctrl+2"
+                    },
+                    {
+                        "label": "Left Service Line (16)",
+                        "colStart": 267,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "16",
+                        "key": "ctrl+6",
+                        "reverse": "shift+6"
+                    },
+                    {
+                        "label": "Right Service Line (13)",
+                        "colStart": 1386,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "13",
+                        "key": "ctrl+9",
+                        "reverse": "shift+9"
+                    },
+                    {
+                        "label": "Reverse Left Service/Attack Line (6)",
+                        "colStart": 0,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "6",
+                        "key": "shift+7",
+                        "reverse": "7"
+                    },
+                    {
+                        "label": "Reverse Left Service/Attack Line (6)",
+                        "colStart": 0,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "6",
+                        "key": "shift+6",
+                        "reverse": "6"
+                    },
+                    {
+                        "label": "B High Behind Left",
+                        "colStart": 0,
+                        "rowStart": 325,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-high-behind-left",
+                        "key": "alt+4"
+                    },
+                    {
+                        "label": "B Tight Left",
+                        "colStart": 551,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-tight-left",
+                        "key": "alt+2"
+                    },
+                    {
+                        "label": "B Tight Right",
+                        "colStart": 1103,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-tight-right",
+                        "key": "alt+9"
+                    },
+                    {
+                        "label": "B Main",
+                        "colStart": 827,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-main",
+                        "key": "0"
+                    },
+                    {
+                        "label": "Far C-Line (19)",
+                        "colStart": 551,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "19",
+                        "key": "5",
+                        "reverse": "shift+5"
+                    },
+                    {
+                        "label": "Near C-Line (22)",
+                        "colStart": 1103,
+                        "rowStart": 647,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "22",
+                        "key": "shift+5",
+                        "reverse": "5"
+                    },
+                    {
+                        "label": "Reverse Right Service/Attack Line (7)",
+                        "colStart": 1653,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "7",
+                        "key": "shift+8",
+                        "reverse": "8"
+                    },
+                    {
+                        "label": "Reverse Right Service/Attack Line (7)",
+                        "colStart": 1653,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "7",
+                        "key": "shift+9",
+                        "reverse": "9"
+                    },
+                    {
+                        "label": "High Behind Left (4)",
+                        "colStart": 267,
+                        "rowStart": 325,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "4",
+                        "key": "shift+alt+3",
+                        "reverse": "ctrl+alt+3"
+                    },
+                    {
+                        "label": "High Behind Right (9)",
+                        "colStart": 1386,
+                        "rowStart": 324,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "9",
+                        "key": "ctrl+alt+3",
+                        "reverse": "shift+alt+3"
+                    },
+                    {
+                        "label": "B High Behind Right",
+                        "colStart": 1653,
+                        "rowStart": 324,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-high-behind-right",
+                        "key": "alt+3",
+                        "reverse": "ctrl+alt+3"
+                    },
+                    {
+                        "label": "B Far Net",
+                        "colStart": 986,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-far-net",
+                        "key": "4",
+                        "reverse": "shift+4"
+                    },
+                    {
+                        "label": "B Near Net",
+                        "colStart": 710,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-near-net",
+                        "key": "shift+4",
+                        "reverse": "4"
+                    },
+                    {
+                        "colStart": 550,
+                        "rowStart": 162,
+                        "w": 824,
+                        "h": 467,
+                        "type": "subView",
+                        "name": "currentBookmarkColourFill"
+                    },
+                    {
+                        "label": "Output",
+                        "colStart": 554,
+                        "rowStart": 165,
+                        "w": 816,
+                        "h": 459,
+                        "type": "output",
+                        "streamingOutputNames": [
+                            "main-clean",
+                            "main-dirty"
+                        ],
+                        "defaultPresetName": "MainViewPreset"
+                    },
+                    {
+                        "label": "playbackTimeline",
+                        "colStart": 0,
+                        "rowStart": 1030,
+                        "w": 1920,
+                        "h": 50,
+                        "type": "playbackTimeline"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "All Cams",
+            "type": "Custom grid",
+            "settings": {
+                "gridCols": 1920,
+                "gridRows": 1080,
+                "tileARNumerator": 1,
+                "tileARDenominator": 1,
+                "tiles": [
+                    {
+                        "label": "GraphicsSequences",
+                        "colStart": 827,
+                        "rowStart": 647,
+                        "w": 267,
+                        "h": 150,
+                        "type": "subView",
+                        "name": "graphicsSequences"
+                    },
+                    {
+                        "label": "Left Attack Line (15)",
+                        "colStart": 267,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "15",
+                        "key": "ctrl+7",
+                        "reverse": "shift+7"
+                    },
+                    {
+                        "label": "Far Net (20)",
+                        "colStart": 433,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "20",
+                        "key": "3",
+                        "reverse": "shift+3"
+                    },
+                    {
+                        "label": "Tracking Cam 10",
+                        "colStart": 1653,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "10",
+                        "key": "alt+shift+10",
+                        "reverse": "alt+shift+3"
+                    },
+                    {
+                        "label": "Tracking Cam 5",
+                        "colStart": 0,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "5",
+                        "key": "alt+shift+5",
+                        "reverse": "alt+shift+8"
+                    },
+                    {
+                        "label": "Tracking Cam 8",
+                        "colStart": 1653,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "8",
+                        "key": "alt+shift+8",
+                        "reverse": "alt+shift+5"
+                    },
+                    {
+                        "label": "Left Near Block Touch (17)",
+                        "colStart": 267,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "17",
+                        "key": "2",
+                        "reverse": "shift+2"
+                    },
+                    {
+                        "label": "Right Near Block Touch (12)",
+                        "colStart": 1386,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "12",
+                        "key": "shift+2",
+                        "reverse": "2"
+                    },
+                    {
+                        "label": "Left Service Line (16)",
+                        "colStart": 0,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "16",
+                        "key": "ctrl+6",
+                        "reverse": "shift+6"
+                    },
+                    {
+                        "label": "Near Net (21)",
+                        "colStart": 1263,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "21",
+                        "key": "shift+3",
+                        "reverse": "3"
+                    },
+                    {
+                        "label": "Right Service Line (13)",
+                        "colStart": 1653,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "13",
+                        "key": "9",
+                        "reverse": "shift+9"
+                    },
+                    {
+                        "label": "Tracking Cam 3",
+                        "colStart": 0,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "3",
+                        "key": "alt+shift+3",
+                        "reverse": "alt+shift+10"
+                    },
+                    {
+                        "label": "Right Attack Line (14)",
+                        "colStart": 1386,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "14",
+                        "key": "ctrl+8",
+                        "reverse": "shift+8"
+                    },
+                    {
+                        "label": "Left Far Block Touch (18)",
+                        "colStart": 267,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "18",
+                        "key": "ctrl+1",
+                        "reverse": "shift+ctrl+1"
+                    },
+                    {
+                        "label": "Right Far Block Touch (11)",
+                        "colStart": 1386,
+                        "rowStart": 165,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "11",
+                        "key": "shift+ctrl+1",
+                        "reverse": "ctrl+1"
+                    },
+                    {
+                        "label": "Left Near Block Touch (17)",
+                        "colStart": 0,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "17",
+                        "key": "ctrl+2",
+                        "reverse": "shift+ctrl+2"
+                    },
+                    {
+                        "label": "Right Near Block Touch (12)",
+                        "colStart": 1653,
+                        "rowStart": 485,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "12",
+                        "key": "shift+ctrl+2",
+                        "reverse": "ctrl+2"
+                    },
+                    {
+                        "label": "Left Service Line (16)",
+                        "colStart": 267,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "16",
+                        "key": "6",
+                        "reverse": "shift+6"
+                    },
+                    {
+                        "label": "Right Service Line (13)",
+                        "colStart": 1386,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "13",
+                        "key": "ctrl+9",
+                        "reverse": "shift+9"
+                    },
+                    {
+                        "label": "Reverse Left Service/Attack Line (6)",
+                        "colStart": 0,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "6",
+                        "key": "shift+7",
+                        "reverse": "7"
+                    },
+                    {
+                        "label": "Reverse Left Service/Attack Line (6)",
+                        "colStart": 0,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "6",
+                        "key": "shift+6",
+                        "reverse": "6"
+                    },
+                    {
+                        "label": "B High Behind Left",
+                        "colStart": 0,
+                        "rowStart": 325,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-high-behind-left",
+                        "key": "alt+4"
+                    },
+                    {
+                        "label": "B Tight Left",
+                        "colStart": 551,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-tight-left",
+                        "key": "alt+2"
+                    },
+                    {
+                        "label": "B Tight Right",
+                        "colStart": 1103,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-tight-right",
+                        "key": "alt+9"
+                    },
+                    {
+                        "label": "B Main",
+                        "colStart": 827,
+                        "rowStart": 810,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-main",
+                        "key": "0"
+                    },
+                    {
+                        "label": "Far C-Line (19)",
+                        "colStart": 551,
+                        "rowStart": 646,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "19",
+                        "key": "5",
+                        "reverse": "shift+5"
+                    },
+                    {
+                        "label": "Near C-Line (22)",
+                        "colStart": 1103,
+                        "rowStart": 647,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "22",
+                        "key": "shift+5",
+                        "reverse": "5"
+                    },
+                    {
+                        "label": "Reverse Right Service/Attack Line (7)",
+                        "colStart": 1653,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "7",
+                        "key": "shift+8",
+                        "reverse": "8"
+                    },
+                    {
+                        "label": "Reverse Right Service/Attack Line (7)",
+                        "colStart": 1653,
+                        "rowStart": 0,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "7",
+                        "key": "shift+9",
+                        "reverse": "9"
+                    },
+                    {
+                        "label": "High Behind Left (4)",
+                        "colStart": 267,
+                        "rowStart": 325,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "4",
+                        "key": "shift+alt+3",
+                        "reverse": "ctrl+alt+3"
+                    },
+                    {
+                        "label": "High Behind Right (9)",
+                        "colStart": 1386,
+                        "rowStart": 324,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "9",
+                        "key": "ctrl+alt+3",
+                        "reverse": "shift+alt+3"
+                    },
+                    {
+                        "label": "B High Behind Right",
+                        "colStart": 1653,
+                        "rowStart": 324,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-high-behind-right",
+                        "key": "alt+3",
+                        "reverse": "ctrl+alt+3"
+                    },
+                    {
+                        "label": "B Near Net",
+                        "colStart": 986,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-near-net",
+                        "key": "4+9",
+                        "reverse": "shift+4+9"
+                    },
+                    {
+                        "label": "B Far Net",
+                        "colStart": 710,
+                        "rowStart": 8,
+                        "w": 267,
+                        "h": 150,
+                        "type": "camera",
+                        "id": "b-near-net",
+                        "key": "shift+4+9",
+                        "reverse": "4+9"
+                    },
+                    {
+                        "label": "Tracking Cam 1",
+                        "colStart": 6,
+                        "rowStart": 970,
+                        "w": 187,
+                        "h": 105,
+                        "type": "camera",
+                        "id": "1",
+                        "key": "alt+shift+1",
+                        "reverse": "alt+shift+2"
+                    },
+                    {
+                        "label": "Tracking Cam 2",
+                        "colStart": 1720,
+                        "rowStart": 967,
+                        "w": 187,
+                        "h": 105,
+                        "type": "camera",
+                        "id": "2",
+                        "key": "alt+shift+2",
+                        "reverse": "alt+shift+1"
+                    },
+                    {
+                        "colStart": 550,
+                        "rowStart": 162,
+                        "w": 824,
+                        "h": 467,
+                        "type": "subView",
+                        "name": "currentBookmarkColourFill"
+                    },
+                    {
+                        "label": "Output",
+                        "colStart": 554,
+                        "rowStart": 165,
+                        "w": 816,
+                        "h": 459,
+                        "type": "output",
+                        "streamingOutputNames": [
+                            "main-clean",
+                            "main-dirty"
+                        ],
+                        "defaultPresetName": "MainViewPreset"
+                    },
+                    {
+                        "label": "playbackTimeline",
+                        "colStart": 200,
+                        "rowStart": 1075,
+                        "w": 1510,
+                        "h": 95,
+                        "type": "playbackTimeline"
+                    }
+                ]
+            }
+        }
+    ],
+    "streamingOutputs": [
+        {
+            "name": "main-clean",
+            "width": 1920,
+            "height": 1080,
+            "url": "rtsp://rtsp-server:8554/clean-2"
+        },
+        {
+            "name": "main-dirty",
+            "width": 1920,
+            "height": 1080,
+            "url": "rtsp://rtsp-server:8554/dirty-2"
+        }
+    ],
+    "subViews": [
+        {
+            "name": "mainBackground",
+            "type": "Background Image",
+            "settings": {
+                "imageFilePath": "/opt/apg/shared/asset_sync/images/mainBackgroundImage.png"
+            }
+        },
+        {
+            "name": "currentBookmarkColourFill",
+            "type": "Current Bookmark Colour Fill",
+            "settings": {}
+        },
+        {
+            "name": "graphicsSequences",
+            "type": "GraphicsSequences",
+            "settings": {
+                "sequences": [
+                    { 
+                        "label" : "Blank",
+                        "key" : "pause",
+                        "sequence" : [] 
+                    },
+                    {
+                        "label": "Block Touch Foul",
+                        "key": "ctrl+q+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Block Touch NoFoul",
+                        "key": "ctrl+w+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Block Touch Sim Touch",
+                        "key": "ctrl+e+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchSim",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Block Touch Home",
+                        "key": "ctrl+r+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchHome",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Block Touch Away",
+                        "key": "ctrl+t+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchAway",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Block Touch First Fault Observed",
+                        "key": "ctrl+y+1",
+                        "sequence": [
+                            {
+                                "textureName": "blockTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "blockTouchFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch Foul",
+                        "key": "ctrl+q+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch NoFoul",
+                        "key": "ctrl+w+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch Double Fault",
+                        "key": "ctrl+e+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchDoubleFault",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch Home",
+                        "key": "ctrl+r+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchHome",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch Away",
+                        "key": "ctrl+t+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchAway",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Net Touch First Fault Observed",
+                        "key": "ctrl+y+2",
+                        "sequence": [
+                            {
+                                "textureName": "netTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "netTouchFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Attack Line Foul",
+                        "key": "ctrl+q+3",
+                        "sequence": [
+                            {
+                                "textureName": "attackLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "attackLineFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Attack Line NoFoul",
+                        "key": "ctrl+w+3",
+                        "sequence": [
+                            {
+                                "textureName": "attackLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "attackLineNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Attack Line First Fault Observed",
+                        "key": "ctrl+e+3",
+                        "sequence": [
+                            {
+                                "textureName": "attackLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "attackLineFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Antenna Touch Foul",
+                        "key": "ctrl+q+4",
+                        "sequence": [
+                            {
+                                "textureName": "antennaTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "antennaTouchFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Antenna Touch NoFoul",
+                        "key": "ctrl+w+4",
+                        "sequence": [
+                            {
+                                "textureName": "antennaTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "antennaTouchNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Antenna Touch First Fault Observed",
+                        "key": "ctrl+e+4",
+                        "sequence": [
+                            {
+                                "textureName": "antennaTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "antennaFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Centre Line Foul",
+                        "key": "ctrl+q+5",
+                        "sequence": [
+                            {
+                                "textureName": "centreLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "centreLineFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Centre Line NoFoul",
+                        "key": "ctrl+w+5",
+                        "sequence": [
+                            {
+                                "textureName": "centreLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "centreLineNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Centre Line First Fault Observed",
+                        "key": "ctrl+e+5",
+                        "sequence": [
+                            {
+                                "textureName": "centreLineWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "cLineFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Floor Touch Foul",
+                        "key": "ctrl+q+6",
+                        "sequence": [
+                            {
+                                "textureName": "floorTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "floorTouchFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Floor Touch NoFoul",
+                        "key": "ctrl+w+6",
+                        "sequence": [
+                            {
+                                "textureName": "floorTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "floorTouchNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Floor Touch First Fault Observed",
+                        "key": "ctrl+e+6",
+                        "sequence": [
+                            {
+                                "textureName": "floorTouchWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "fTouchFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Service Line Foul",
+                        "key": "ctrl+q+7",
+                        "sequence": [
+                            {
+                                "textureName": "serviceFootFaultWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "serviceFootFaultFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Service Line NoFoul",
+                        "key": "ctrl+w+7",
+                        "sequence": [
+                            {
+                                "textureName": "serviceFootFaultWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "serviceFootFaultNoFoul",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "Service Line First Fault Observed",
+                        "key": "ctrl+e+7",
+                        "sequence": [
+                            {
+                                "textureName": "serviceFootFaultWaiting",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            },
+                            {
+                                "textureName": "sLineFFO",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "label": "First Referree Decision Stands",
+                        "key": "ctrl+t+7",
+                        "sequence": [
+                            {
+                                "textureName": "reviewInconclusive",
+                                "onlyShowOn": [
+                                    "main-dirty",
+                                    "outputTile"
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "extraGraphics": [
+                    [
+                        {
+                            "key": "ctrl+t+6",
+                            "textureName": "reviewUpheld",
+                            "replacePrev": false,
+                            "onlyShowOn": [
+                                "main-dirty",
+                                "outputTile"
+                            ]
+                        },
+                        {
+                            "key": "ctrl+y+6",
+                            "textureName": "reviewOverTurned",
+                            "replacePrev": false,
+                            "onlyShowOn": [
+                                "main-dirty",
+                                "outputTile"
+                            ]
+                        },
+                        {
+                            "key": "ctrl+y+7",
+                            "textureName": "refereeChallenge",
+                            "replacePrev": false,
+                            "addToStart": true,
+                            "onlyShowOn": [
+                                "main-dirty",
+                                "outputTile"
+                            ]
+                        }
+                    ]
+                ],
+                "defaultGraphics": [
+                    {
+                        "textureName": "privacyGraphic",
+                        "onlyShowOn": [
+                            "main-dirty"
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "textures": [
+        {
+            "textureName": "blockTouchFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouchFFO.png"
+        },
+        {
+            "textureName": "netTouchFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouchFFO.png"
+        },
+        {
+            "textureName": "attackLineFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/attackLineFFO.png"
+        },
+        {
+            "textureName": "antennaFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/antennaFFO.png"
+        },
+        {
+            "textureName": "cLineFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/cLineFFO.png"
+        },
+        {
+            "textureName": "fTouchFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/fTouchFFO.png"
+        },
+        {
+            "textureName": "sLineFFO",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/sLineFFO.png"
+        },
+        {
+            "textureName": "serviceFootFaultWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/serviceFootFaultWaiting.png"
+        },
+        {
+            "textureName": "serviceFootFaultFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/serviceFootFaultFoul.png"
+        },
+        {
+            "textureName": "serviceFootFaultNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/serviceFootFaultNoFoul.png"
+        },
+        {
+            "textureName": "attackLineWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/attackLineWaiting.png"
+        },
+        {
+            "textureName": "attackLineFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/attackLineFoul.png"
+        },
+        {
+            "textureName": "attackLineNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/attackLineNoFoul.png"
+        },
+        {
+            "textureName": "centreLineWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/centreLineWaiting.png"
+        },
+        {
+            "textureName": "centreLineFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/centreLineFoul.png"
+        },
+        {
+            "textureName": "centreLineNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/centreLineNoFoul.png"
+        },
+        {
+            "textureName": "netTouchWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouchWaiting.png"
+        },
+        {
+            "textureName": "netTouchFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouchFoul.png"
+        },
+        {
+            "textureName": "netTouchNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouchNoFoul.png"
+        },
+        {
+            "textureName": "blockTouchWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouchWaiting.png"
+        },
+        {
+            "textureName": "blockTouchFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouchFoul.png"
+        },
+        {
+            "textureName": "blockTouchNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouchNoFoul.png"
+        },
+        {
+            "textureName": "antennaTouchWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/antennaTouchWaiting.png"
+        },
+        {
+            "textureName": "antennaTouchFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/antennaTouchFoul.png"
+        },
+        {
+            "textureName": "antennaTouchNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/antennaTouchNoFoul.png"
+        },
+        {
+            "textureName": "floorTouchWaiting",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/floorTouchWaiting.png"
+        },
+        {
+            "textureName": "floorTouchFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/floorTouchFoul.png"
+        },
+        {
+            "textureName": "floorTouchNoFoul",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/floorTouchNoFoul.png"
+        },
+        {
+            "textureName": "refereeChallenge",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/refereeChallenge.png"
+        },
+        {
+            "textureName": "privacyGraphic",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_None",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_LeftRightSplit",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_UpDownSplit",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_TriSplit",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "Background_QuadSplit",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/privacyGraphic.png"
+        },
+        {
+            "textureName": "blockTouchSim",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouchSim.png"
+        },
+        {
+            "textureName": "reviewUpheld",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/reviewUpheld.png"
+        },
+        {
+            "textureName": "reviewOverTurned",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/reviewOverTurned.png"
+        },
+        {
+            "textureName": "reviewInconclusive",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/reviewInconclusive.png"
+        },
+        {
+            "textureName": "netTouchDoubleFault",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouchDoubleFault.png"
+        },
+        {
+            "textureName": "blockTouchHome",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouch$homeTeam.png"
+        },
+        {
+            "textureName": "blockTouchAway",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/blockTouch$awayTeam.png"
+        },
+        {
+            "textureName": "netTouchHome",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouch$homeTeam.png"
+        },
+        {
+            "textureName": "netTouchAway",
+            "imageFilePath": "/opt/apg/shared/asset_sync/images/netTouch$awayTeam.png"
+        }
+    ]
+}

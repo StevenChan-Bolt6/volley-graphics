@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt6 - Volleyball Ref Screen</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.6.3/dist/vuetify.js"></script>
+    <style>
+        .full-width {
+            width: 100%;
+        }
+
+        .tall-button {
+            min-height: 8vh;
+            /* Change this value as needed */
+            font-size: 2em;
+            box-shadow: none !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            padding: 1vw;
+        }
+
+
+
+
+        /* Add margin between buttons */
+        .v-col {
+            margin-right: 40px;
+        }
+
+        .v-col:last-child {
+            margin-right: 0;
+        }
+
+        /* Hide empty buttons */
+        .empty-button {
+            opacity: 0;
+            pointer-events: none;
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        .v-container {
+            padding: 20px;
+        }
+
+        .red-text {
+            color: red;
+        }
+
+        .blue-text {
+            color: blue;
+        }
+
+        #app {
+            padding: 20px;
+        }
+
+        .vertical-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .v-row {
+            gap: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-container fluid>
+                <v-row v-for="(rowButtons, rowIndex) in buttons" :key="rowIndex">
+                    <v-col v-for="button in rowButtons" :key="button.key" cols="12" sm="2" class="pa-3"
+                        style="width: 100%;">
+
+                        <div>
+                            <v-btn v-if="button.label" class="full-width tall-button" :style="buttonStyle(button)"
+                                :color="button.backgroundColour" @click="publishMessage(button)"
+                                :disabled="button.disabled">
+                                <span v-html="button.label"></span>
+                            </v-btn>
+
+
+                        </div>
+                    </v-col>
+
+                </v-row>
+            </v-container>
+        </v-app>
+    </div>
+    <script type="module">
+        // import { connect, StringCodec } from "./js/nats.js"
+
+        // const natsInit = async function (connectionURL, topic, callback) {
+        //     console.log(`Connecting to Nats: ${connectionURL}`)
+        //     const conn = await connect({
+        //         servers: connectionURL
+        //     })
+
+        //     console.log(`Connected to Nats: ${connectionURL}`)
+        //     const sc = StringCodec()
+
+        //     const publishFunction = (message) => {
+        //         console.log(`Publishing message: ${message}`);
+        //         conn.publish(topic, sc.encode(message));
+        //     }
+
+        //     return publishFunction;
+        // }
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data: {
+                selectedButton: null,
+                buttons: [
+                    [
+                        
+                        { key: 'r1b1', label: 'BLOCK TOUCH', backgroundColour: '#e69f00', keyBinding: 'ctrl+q+1' },
+                        { key: 'r1b2', label: '<span class="red-text">NO</span><br> BLOCK TOUCH', backgroundColour: '#e69f00', keyBinding: 'ctrl+w+1' },
+                        { key: 'r1b3', label: 'SIMULTANEOUS <br> TOUCH', backgroundColour: '#e69f00', keyBinding: 'ctrl+e+1' },
+                        { key: 'r1b4', label: '<h2>MODENA</h2> <br>LAST BLOCK TOUCH', backgroundColour: '#e69f00', keyBinding: 'ctrl+r+1' },
+                        { key: 'r1b5', label: '<h2>OPPONENT</h2> <br>LAST BLOCK TOUCH', backgroundColour: '#e69f00', keyBinding: 'ctrl+t+1' },
+                        { key: 'r1b6', label: 'BLOCK TOUCH FAULT<br><h4>FIRST FAULT OBSERVED</h4>', backgroundColour: '#e69f00', keyBinding: 'ctrl+y+1' },
+                    ],
+                    [
+                        { key: 'r2b1', label: 'NET TOUCH', backgroundColour: '#56b4e9', keyBinding: 'ctrl+q+2' },
+                        { key: 'r2b2', label: '<span class="red-text">NO</span><br> NET TOUCH', backgroundColour: '#56b4e9', keyBinding: 'ctrl+w+2' },
+                        { key: 'r2b3', label: 'DOUBLE FAULT <br> REPLAY POINT', backgroundColour: '#A8A8A8', keyBinding: 'ctrl+e+2' },
+                        { key: 'r2b4', label: '<h2>MODENA</h2> <br>FIRST FAULT', backgroundColour: '#C4C3C2', keyBinding: 'ctrl+r+2' },
+                        { key: 'r2b5', label: '<h2>OPPONENT</h2> <br>FIRST FAULT', backgroundColour: '#C4C3C2', keyBinding: 'ctrl+t+2' },
+                        { key: 'r2b6', label: 'NET TOUCH FAULT<br><h4>FIRST FAULT OBSERVED</h4>', backgroundColour: '#56b4e9', keyBinding: 'ctrl+y+2' },
+                    ],
+                    [
+                        { key: 'r3b1', label: 'ATTACK LINE FAULT', backgroundColour: '#44bb99', keyBinding: 'ctrl+q+3' },
+                        { key: 'r3b2', label: '<span class="red-text">NO</span><br> ATTACK LINE FAULT', backgroundColour: '#44bb99', keyBinding: 'ctrl+w+3' },
+                        { key: 'r3b3', label: 'ATTACK LINE FAULT<br><h4>FIRST FAULT OBSERVED</h4>', backgroundColour: '#44bb99', keyBinding: 'ctrl+e+3' },
+                        { key: 'r3b4', label: '', disabled: true, class: 'empty-button', keyBinding: '' }, // Empty button object
+                        { key: 'r3b5', label: '', disabled: true, class: 'empty-button', keyBinding: '' }, // Empty button object
+                    ],
+                    [
+                        { key: 'r4b1', label: 'ANTENNA TOUCH', backgroundColour: '#f0e442', keyBinding: 'ctrl+q+4' },
+                        { key: 'r4b2', label: '<span class="red-text">NO</span><br> ANTENNA TOUCH', backgroundColour: '#f0e442', keyBinding: 'ctrl+w+4' },
+                        { key: 'r4b3', label: 'ANTENNA TOUCH<br><h4>FIRST FAULT OBSERVED</h4>', backgroundColour: '#f0e442', keyBinding: 'ctrl+e+4' },
+                        { key: 'r4b4', label: '', disabled: true, class: 'empty-button', keyBinding: '' },
+
+                    ],
+                    [
+                        { key: 'r5b1', label: 'CENTRE LINE FAULT', keyBinding: 'ctrl+q+5', backgroundColour: '#80b9d9' },
+                        { key: 'r5b2', label: '<span class="red-text">NO</span><br> CENTRE LINE FAULT', backgroundColour: '#80b9d9', keyBinding: 'ctrl+w+5' },
+                        { key: 'r5b3', label: 'CENTRE LINE FAULT<br><h4>FIRST FAULT OBSERVED</h4>', keyBinding: 'ctrl+e+5', backgroundColour: '#80b9d9' },
+                    ],
+                    [
+  
+                        { key: 'r6b1', label: 'FLOOR TOUCH FAULT', backgroundColour: '#aaaa00', keyBinding: 'ctrl+q+6' },
+                        { key: 'r6b2', label: '<span class="red-text">NO</span><br> FLOOR TOUCH FAULT', backgroundColour: '#aaaa00', keyBinding: 'ctrl+w+6' },
+                        { key: 'r6b3', label: 'FLOOR TOUCH FAULT<br><h4>FIRST FAULT OBSERVED</h4>', keyBinding: 'ctrl+e+6', backgroundColour: '#aaaa00' },
+                        { key: 'r6b4', label: '', disabled: true, class: 'empty-button', keyBinding: '' }, // Empty button object
+                        { key: 'r6b5', label: '<h4>REVIEW UPHELD</h4>', backgroundColour: '#4dcf30', keyBinding: 'ctrl+t+6' },
+                        { key: 'r6b6', label: '<h4>REVIEW OVERTURNED</h4>', backgroundColour: '#ff0000', keyBinding: 'ctrl+y+6' },
+                    ],
+                    [
+                        { key: 'r7b1', label: 'SERVICE LINE FAULT', keyBinding: 'ctrl+q+7', backgroundColour: '#cc79a7' },
+                        { key: 'r7b2', label: '<span class="red-text">NO</span><br> SERVICE LINE FAULT', keyBinding: 'ctrl+w+7', backgroundColour: '#cc79a7'},
+                        { key: 'r7b3', label: 'SERVICE LINE FAULT<br><h4>FIRST FAULT OBSERVED</h4>', keyBinding: 'ctrl+e+7', backgroundColour: '#cc79a7'},
+                        { key: 'r7b4', label: '', disabled: true, class: 'empty-button', keyBinding: '' }, // Empty button object
+                        { key: 'r7b5',label: 'FIRST REF DECISION <br> STANDS', keyBinding: 'ctrl+t+7', backgroundColour: '#FFA500'  }, // Empty button object
+                        { key: 'r7b6', label: 'CLEAR GRAPHICS', keyBinding: 'ctrl+y+7', backgroundColour: '#38e1ff'},
+                    ],
+                ],
+            },
+            methods: {
+                publishMessage(button) {
+                    // Update the selectedButton property with the clicked button
+                    this.selectedButton = button;
+
+                    // Check if the button's keyBinding is empty
+                    if (!button.keyBinding || button.keyBinding.trim() === '') {
+                        console.error('Error: Key binding is empty');
+                        return;
+                    }
+
+                    // Log the keyBinding of the clicked button, if it exists
+                    console.log(`Key Binding: ${button.keyBinding}`);
+                    let message = {
+                        key: button.keyBinding
+                    }
+                    this.publishFunction(JSON.stringify(message))
+                },
+
+
+                calculateFontSize() {
+                    this.$nextTick(() => {
+                        const buttons = document.querySelectorAll('.tall-button');
+                        buttons.forEach((button) => {
+                            const width = button.clientWidth;
+                            const height = button.clientHeight;
+                            const fontSize = Math.min(width * 0.075, height * 0.2, 24); // Add the height factor, and adjust the multiplier as needed
+                            button.style.fontSize = `${fontSize}px`;
+                        });
+                    });
+                }
+
+            },
+            mounted() {
+                this.calculateFontSize();
+                window.addEventListener('resize', this.calculateFontSize);
+            },
+            beforeDestroy() {
+                window.removeEventListener('resize', this.calculateFontSize);
+            },
+
+            created() {
+                //get query params
+                let uri = window.location.search.substring(1);
+                let params = new URLSearchParams(uri);
+
+                this.defaultNatsServer = params.get("nats_ws_broker")
+                if (this.defaultNatsServer == null) {
+                    this.defaultNatsServer = "ws://localhost:4223"
+                }
+
+                this.defaultNatsTopic = params.get("nats_topic")
+                if (this.defaultNatsTopic == null) {
+                    this.defaultNatsTopic = "webApp.keyCommands"
+                }
+
+                natsInit(this.defaultNatsServer, this.defaultNatsTopic)
+                    .then(publishFunction => {
+                        this.publishFunction = publishFunction
+                    })
+                    .catch(err => {
+                        console.log(err)
+                    })
+            },
+
+            computed: {
+                buttonStyle() {
+                    return (button) => {
+                        if (this.selectedButton === button) {
+                            return 'position: relative; border: 6px dashed black;'
+                        }
+                        return '';
+                    }
+                }
+            },
+
+        });
+    </script>
+</body>
+
+</html>

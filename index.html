@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+</head>
+
+<body style="padding: 0; margin: 0;">
+    <div id="app" style="height: 100vh; width: 100vw; padding: 0; margin: 0;">
+        <img v-bind:src="imageURL" style="height: 100%; width: 100%; padding: 0; margin: 0; display: block;">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+    <script type="module">
+        import { connect, StringCodec } from "/js/nats.js"
+
+        const natsInit = async function (connectionURL, topic, callback) {
+            console.log(`Connecting to Nats: ${connectionURL}`)
+            const conn = await connect({
+                servers: connectionURL
+            })
+
+            console.log(`Connected to Nats: ${connectionURL}`)
+            const sc = StringCodec()
+            const sub = conn.subscribe(topic)
+
+            console.log(`subscribing on topic: ${topic}`)
+
+            console.log(`Waiting for messages`)
+            for await (const m of sub) {
+                callback(sc.decode(m.data))
+            }
+        }
+
+        new Vue({
+            el: '#app',
+            data: {
+                imageURL: "images/STANDBY.png",
+                defaultImage: "",
+                defaultTimeout: 0,
+                defaultNatsServer: "",
+                defaultNatsTopic: "",
+                timeout: null
+            },
+            methods: {
+                setImage(imageName) {
+                    this.imageURL = this.getURL(imageName)
+                },
+                getURL(imageName) {
+                    return `images/${imageName}.png`
+                },
+                resetImage(){
+                    console.log('Resetting Image')
+                    this.setImage(this.defaultImage)
+                },
+                handleNatsMessage(payload){
+                    console.log(`Received message with payload: ${payload}`)
+
+                    try {
+                        clearTimeout(this.timeout)
+                    } catch (err) {
+                        console.log(err)
+                    }
+
+                    this.setImage(payload)
+
+                    console.log(`Image updated, image will auto reset in ${this.defaultTimeout}s`)
+
+                    this.timeout = setTimeout(this.resetImage, this.defaultTimeout*1000)
+                }
+            },
+            created() {
+                //get query params
+                let uri = window.location.search.substring(1);
+                let params = new URLSearchParams(uri);
+
+                this.defaultImage = params.get("default_image")
+                if (this.defaultImage == null) {
+                    this.defaultImage = "STANDBY"
+                } else {
+                    this.setImage(this.defaultImage)
+                }
+
+                this.defaultTimeout = params.get("timeout")
+                if (this.defaultTimeout == null) {
+                    this.defaultTimeout = 30
+                } else {
+                    this.defaultTimeout = Number(this.defaultTimeout)
+                }
+
+                this.defaultNatsServer = params.get("nats_ws_broker")
+                if (this.defaultNatsServer == null) {
+                    this.defaultNatsServer = "ws://localhost:4223"
+                }
+
+                this.defaultNatsTopic = params.get("nats_topic")
+                if (this.defaultNatsTopic == null) {
+                    this.defaultNatsTopic = "officials-tablet-app-bounces"
+                }
+
+                natsInit(this.defaultNatsServer, this.defaultNatsTopic, this.handleNatsMessage)
+                    .catch(err => {
+                        console.log(err)
+                    })
+            },
+        })
+    </script>
+</body>
+
+</html>
