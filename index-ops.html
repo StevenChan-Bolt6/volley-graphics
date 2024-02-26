@@ -44,9 +44,6 @@
             },
             methods: {
                 setImage(imageName) {
-                    /* Temporarily hide 'CROSSINGOUTSIDEANTENNA' function*/
-                    if (imageName=="CROSSINGOUTSIDEANTENNA"){ imageName="STANDBY"}
-                    console.log("Temporarily changed CROSSINGOUTSIDEANTENNA to STANDBY")
                     this.imageURL = this.getURL(imageName)
                 },
                 getURL(imageName) {
