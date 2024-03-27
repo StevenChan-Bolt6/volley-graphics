@@ -70,6 +70,17 @@
                 }
             },
             created() {
+                //force to http
+                // if (window.location.protocol == "https:") {
+                //   console.log("You are not connected with the correct protocol.")
+                //   console.log("Reloading the page to the correct protocol...")
+                //   window.location = document.URL.replace("https://", "http://");
+                // }
+
+                // if (window.location.protocol == "http:") {
+                //   console.log("You are connected with the correct protocol.")
+                // }
+                
                 //get query params
                 let uri = window.location.search.substring(1);
                 let params = new URLSearchParams(uri);
